@@ -1,0 +1,43 @@
+.order {
+    max-width: 700px;
+    margin: auto;
+}
+
+
+.date, h1 {
+    display: inline-block;
+}
+
+h2 {
+    border-bottom: 1px solid black;
+}
+
+.customer, .vehicle, .detail, .cost {
+    border-top: 2px solid black;
+}
+
+.customer, .vehicle, .detail, .cost, .date, h1 {
+    min-width: 50%;
+}
+
+.order-container {
+    background: rgba(255, 255, 255, .9);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    align-items: baseline;
+    border: 3px solid black;
+    border-radius: 15px;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+.vehicle, .cost, .date {
+    text-align: right;
+}
+
+@media screen and (min-width:535px) {
+    .customer, .vehicle, .detail, .cost, .date, h1 {
+        width: 50%;
+    }
+}
